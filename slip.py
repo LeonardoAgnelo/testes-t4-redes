@@ -68,7 +68,7 @@ class Enlace:
         
         if not dados.endswitch(b'\xc0')
             self.buffer = dados
-        else
+        elif dados.endswitch(b'\xc0')
             dadoscompleto = dados.split(b'\xc0')
             self.buffer = b''
             for i in dadoscompleto:
