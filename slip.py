@@ -64,19 +64,4 @@ class Enlace:
         # vir quebrado de várias formas diferentes - por exemplo, podem vir
         # apenas pedaços de um quadro, ou um pedaço de quadro seguido de um
         # pedaço de outro, ou vários quadros de uma vez só.
-        dados = self.buffer + dados
-        
-        if not dados.endswitch(b'\xc0')
-            self.buffer = dados
-        elif dados.endswitch(b'\xc0')
-            dadoscompleto = dados.split(b'\xc0')
-            self.buffer = b''
-            for i in range(len(dadoscompleto)-1):
-                if not dadoscompleto[i] == b'':
-                    try:
-                        self.callback(dadoscompleto[i])
-                    except:
-                        import traceback
-                        traceback.print_exc()
-                    finally:
-                        dados = b''
+       pass
